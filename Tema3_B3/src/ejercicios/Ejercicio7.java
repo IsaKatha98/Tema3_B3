@@ -2,13 +2,14 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio7 {
 
 	public static void main(String[] args) {
-		
+	
 		//Declaramos las variables.
 		
 		int num; //Variable introducida por el usuario.
+		int factorial=0; //Variable factorial.
 		
 		/*Creamos un escáner para poder leer los datos que introduzca el usuario por
 		la consola. */
@@ -24,13 +25,19 @@ public class Ejercicio1 {
 		
 		for (int i=1; i<=num; i++) {	//Declaramos una variable i que solo existirá en el bucle. Se inicilizará en 1 y terminará 
 										//en el número introducido por el usuario. A conitnuación, se imprime.
+			factorial*=i;
+			
 			System.out.println(i);
 		}
+		
+		//Se imprime el resultado total.
+		
+		System.out.println("Total: "+factorial);
 		
 		//Por último, cerramos el escáner.
 		
 		sc.close();
-		
+
 	}
 
 }

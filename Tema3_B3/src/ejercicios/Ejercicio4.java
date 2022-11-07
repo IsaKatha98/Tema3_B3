@@ -2,8 +2,8 @@ package ejercicios;
 
 import java.util.Scanner;
 
-public class Ejercicio1 {
-
+public class Ejercicio4 {
+	
 	public static void main(String[] args) {
 		
 		//Declaramos las variables.
@@ -22,15 +22,15 @@ public class Ejercicio1 {
 		
 		//Instrucciones. 
 		
-		for (int i=1; i<=num; i++) {	//Declaramos una variable i que solo existirá en el bucle. Se inicilizará en 1 y terminará 
-										//en el número introducido por el usuario. A conitnuación, se imprime.
-			System.out.println(i);
+		for (int i=1; i<=num; i++) {	//Declaramos una variable i que solo existirá en el bucle. Se inicilizará en 3 y terminará 
+										//en el número introducido por el usuario, haciendo un incremento de 3 por cada vuelta de 
+			System.out.println(i);		//bucle. A conitnuación, se imprime.
 		}
 		
 		//Por último, cerramos el escáner.
 		
 		sc.close();
-		
+
 	}
 
 }
