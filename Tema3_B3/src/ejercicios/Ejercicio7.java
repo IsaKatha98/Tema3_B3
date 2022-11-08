@@ -9,7 +9,7 @@ public class Ejercicio7 {
 		//Declaramos las variables.
 		
 		int num; //Variable introducida por el usuario.
-		int factorial=0; //Variable factorial.
+		int factorial=1; //Variable factorial.
 		
 		/*Creamos un escáner para poder leer los datos que introduzca el usuario por
 		la consola. */
@@ -23,13 +23,22 @@ public class Ejercicio7 {
 		
 		//Instrucciones. 
 		
-		for (int i=1; i<=num; i++) {	//Declaramos una variable i que solo existirá en el bucle. Se inicilizará en 1 y terminará 
-										//en el número introducido por el usuario. A conitnuación, se imprime.
-			factorial*=i;
+		if (num>0) {
 			
-			System.out.println(i);
+			for (int i=num; i>=1; i--) {	//Declaramos una variable i que solo existirá en el bucle. Se inicilizará en el num introducido por el usuario
+											//y terminará en 0. Habrá un decremento de 1 por bucle.
+			
+				factorial=factorial*i;		//Multiplicamos el factorial por i.
+
+				
+			}
+
+		} else {
+			
+			System.out.println("Número no válido.");
+				
 		}
-		
+	
 		//Se imprime el resultado total.
 		
 		System.out.println("Total: "+factorial);
